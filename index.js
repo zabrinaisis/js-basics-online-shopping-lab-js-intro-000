@@ -27,6 +27,10 @@ function viewCart() {
   } else if (cart.length > 1) {
       var items = [];
       var prices = [];
+      cart.forEach(element, index, array) => {
+        items.push(element.itemName);
+        prices.push(element.itemPrice);
+      }
 
 
     for (let i=0; i<cart.lenth; i++) {
