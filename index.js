@@ -24,10 +24,10 @@ function viewCart() {
   } else  {
     var items = [];
     var prices = [];
-    cart.forEach(element, index, array) => {
+    cart.forEach((element, index, array) => {
       items.push(element.itemName);
       prices.push(element.itemPrice);
-    }
+    });
     if (cart.length === 1) {
       cartString += items[0] + " at $" + prices[0] + ".";
       return (cartString);
