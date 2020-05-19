@@ -23,13 +23,14 @@ function viewCart() {
     return ("Your shopping cart is empty.");
   } else  {
     var items = [];
-    var otherItems = [];
+    var otherItems = cart.map(element => element.itemName);
     var prices = [];
-    var otherPrices = [];
+    var otherPrices = cart.map(element => element.itemPrice);
     cart.forEach((element, index, array) => {
       items.push(element.itemName);
       prices.push(element.itemPrice);
     });
+    
     console.log(otherItems);
     console.log(otherPrices);
     if (cart.length === 1) {
