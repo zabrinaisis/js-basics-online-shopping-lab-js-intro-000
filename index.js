@@ -37,9 +37,10 @@ function viewCart() {
           cartString += "and " + items[i] + " at $" + prices[i] + ".";
         } else {
           cartString += items[i] + " at $" + prices[i] + ",";
+        }
       }
-    }
     return (cartItem);
+    }
   }
 }
 
