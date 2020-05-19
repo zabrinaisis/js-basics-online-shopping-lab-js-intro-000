@@ -57,7 +57,7 @@ function total() {
 function removeFromCart(item) {
   var items = cart.map(element => element.itemName);
   for (let i=0; i<items.length; i++) {
-    if (cart.itemName[i] === item) {
+    if (items[i] === item) {
       cart.splice(i, 1);
       return (cart);
     }
