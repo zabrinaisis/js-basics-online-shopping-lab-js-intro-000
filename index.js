@@ -22,9 +22,13 @@ function viewCart() {
   if (cart.length === 0) {
     return ("Your shopping cart is empty.");
   } else if (cart.length === 1) {
-    cartString += cart.itemName + " at $" + cart.itemPrice + ".";
-    return (cartString);
+      cartString += cart.itemName + " at $" + cart.itemPrice + ".";
+      return (cartString);
   } else if (cart.length > 1) {
+      var items = [];
+      var prices = [];
+
+
     for (let i=0; i<cart.lenth; i++) {
       if (i === (cart.length-1)) {
         cartString += "and " + cart.itemName[i] + " at $" + cart.itemPrice[i] + ".";
