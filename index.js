@@ -1,6 +1,4 @@
 var cart = [];
-var items = cart.map(element => element.itemName);
-var prices = cart.map(element => element.itemPrice);
 
 function getCart() {
  return cart;
@@ -32,6 +30,8 @@ function viewCart() {
       return (cartString);
 
     } else {
+      var items = cart.map(element => element.itemName);
+      var prices = cart.map(element => element.itemPrice);
 
       for (let i=0; i<items.length; i++) {
         if (i === (items.length-1)) {
