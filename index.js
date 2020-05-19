@@ -30,8 +30,8 @@ function viewCart() {
       items.push(element.itemName);
       prices.push(element.itemPrice);
     });
-    console.log(items);
-    console.log(prices);
+    console.log(otherItems);
+    console.log(otherPrices);
     if (cart.length === 1) {
       cartString += items[0] + " at $" + prices[0] + ".";
       return (cartString);
