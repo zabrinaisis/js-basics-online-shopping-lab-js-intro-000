@@ -51,7 +51,7 @@ function total() {
   for (let i=0; i<prices.length; i++) {
     theTotal += prices[i];
   }
-  return (theTotal);
+  console.log(theTotal);
 }
 
 function removeFromCart(item) {
