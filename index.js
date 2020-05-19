@@ -31,13 +31,11 @@ function viewCart() {
         items.push(element.itemName);
         prices.push(element.itemPrice);
       }
-
-
-    for (let i=0; i<cart.lenth; i++) {
-      if (i === (cart.length-1)) {
-        cartString += "and " + cart.itemName[i] + " at $" + cart.itemPrice[i] + ".";
-      } else {
-        cartString += cart.itemName[i] + " at $" + cart.itemPrice[i] + ",";
+      for (let i=0; i<cart.lenth; i++) {
+        if (i === (cart.length-1)) {
+          cartString += "and " + items[i] + " at $" + prices[i] + ".";
+        } else {
+          cartString += items[i] + " at $" + prices[i] + ",";
       }
     }
     return (cartItem);
