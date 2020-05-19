@@ -31,11 +31,11 @@ function viewCart() {
       cartString += items[0] + " at $" + prices[0] + ".";
       return (cartString);
 
-    } else if (cart.length > 1) {
+    } else {
 
-      for (let i=0; i<cart.lenth; i++) {
-        if (i === (cart.length-1)) {
-          cartString += "and " + ".";
+      for (let i=0; i<items.length; i++) {
+        if (i === (items.length-1)) {
+          cartString += "and " + items[i] + " at $" + prices[i] + ".";
         } else {
           cartString += items[i] + " at $" + prices[i] + ",";
         }
