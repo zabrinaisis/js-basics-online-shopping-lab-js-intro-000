@@ -1,4 +1,6 @@
 var cart = [];
+var items = cart.map(element => element.itemName);
+var prices = cart.map(element => element.itemPrice);
 
 function getCart() {
  return cart;
@@ -24,8 +26,6 @@ function viewCart() {
     return ("Your shopping cart is empty.");
 
   } else  {
-    var items = cart.map(element => element.itemName);
-    var prices = cart.map(element => element.itemPrice);
 
     if (cart.length === 1) {
       cartString += items[0] + " at $" + prices[0] + ".";
