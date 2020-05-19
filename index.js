@@ -23,7 +23,9 @@ function viewCart() {
     return ("Your shopping cart is empty.");
   } else  {
     var items = [];
+    var otherItems = [];
     var prices = [];
+    var otherPrices = [];
     cart.forEach((element, index, array) => {
       items.push(element.itemName);
       prices.push(element.itemPrice);
