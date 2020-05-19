@@ -47,7 +47,8 @@ function viewCart() {
 
 function total() {
   var theTotal = 0;
-  for (let i=0; i<items.length; i++) {
+  var prices = cart.map(element => element.itemPrice);
+  for (let i=0; i<prices.length; i++) {
     theTotal += prices[i];
   }
   return (theTotal);
