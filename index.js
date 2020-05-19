@@ -28,10 +28,10 @@ function viewCart() {
       items.push(element.itemName);
       prices.push(element.itemPrice);
     }
-    if (cart.length === 1)
+    if (cart.length === 1) {
       cartString += items[0] + " at $" + prices[0] + ".";
       return (cartString);
-  } else if (cart.length > 1) {
+    } else if (cart.length > 1) {
       for (let i=0; i<cart.lenth; i++) {
         if (i === (cart.length-1)) {
           cartString += "and " + items[i] + " at $" + prices[i] + ".";
