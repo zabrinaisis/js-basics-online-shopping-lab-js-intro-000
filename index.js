@@ -39,7 +39,7 @@ function viewCart() {
           cartString += items[i] + " at $" + prices[i] + ",";
         }
       }
-    return (cartItem);
+    return (cartString);
     }
   }
 }
