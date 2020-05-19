@@ -24,14 +24,14 @@ function viewCart() {
     return ("Your shopping cart is empty.");
 
   } else  {
+    var items = cart.map(element => element.itemName);
+    var prices = cart.map(element => element.itemPrice);
 
     if (cart.length === 1) {
       cartString += items[0] + " at $" + prices[0] + ".";
       return (cartString);
 
     } else {
-      var items = cart.map(element => element.itemName);
-      var prices = cart.map(element => element.itemPrice);
 
       for (let i=0; i<items.length; i++) {
         if (i === (items.length-1)) {
