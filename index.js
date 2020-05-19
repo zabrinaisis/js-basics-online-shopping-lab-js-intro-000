@@ -30,7 +30,7 @@ function viewCart() {
       items.push(element.itemName);
       prices.push(element.itemPrice);
     });
-    
+
     console.log(otherItems);
     console.log(otherPrices);
     if (cart.length === 1) {
