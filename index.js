@@ -51,7 +51,6 @@ function total() {
   for (let i=0; i<prices.length; i++) {
     theTotal += prices[i];
   }
-  console.log(theTotal);
   return(theTotal);
 }
 
@@ -71,7 +70,6 @@ function placeOrder(cardNumber) {
     return ("Sorry, we don't have a credit card on file for you.");
   } else {
     cart = [];
-    var finalTotal = total();
-    return ("Your total cost is $" + finalTotal + ", which will be charged to the card " + cardNumber + ".");
+    return ("Your total cost is $" + total() + ", which will be charged to the card " + cardNumber + ".");
   }
 }
