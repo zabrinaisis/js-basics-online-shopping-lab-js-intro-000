@@ -52,6 +52,7 @@ function total() {
     theTotal += prices[i];
   }
   console.log(theTotal);
+  return(theTotal);
 }
 
 function removeFromCart(item) {
